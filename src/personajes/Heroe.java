@@ -6,11 +6,8 @@ public class Heroe extends Criatura {
         super(vida, nombre, armadura, vivoOMuerto);
     }
 
-    /**
-     *
-     * @return
-     */
-    public int asignartAtaque() {
+   @Override
+    public int getAtaque() {
         int dado1 = (int) (Math.random() * (100 - 0 + 1) + 0);
         int dado2 = (int) (Math.random() * (100 - 0 + 1) + 0);
         if(dado1 > dado2){

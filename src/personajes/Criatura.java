@@ -7,8 +7,7 @@ public class Criatura {
     private int armadura;
     private int ataque;
     private boolean vivoOMuerto;
-    private String[] nombres = {"Caronte", "Leonisio", "Berserk", "Balquiria", "Urgot", "Ter", "Mordekaiser", "Krono", "Apolo", "Skoly", "Kira",
-        "Legolas", "Misthios", "Dragma", "Eaco", "Morbidius", "Whisper", "Whistle"};
+
 
     /**
      * Constructor
@@ -25,7 +24,9 @@ public class Criatura {
         this.vivoOMuerto = vivoOMuerto;
     }
 
-  
+    /**
+     * Getters y setters
+     */
     public int getVida() {
         return vida;
     }
@@ -50,14 +51,6 @@ public class Criatura {
         this.armadura = armadura;
     }
 
-    public int getAtaque() {
-        return ataque;
-    }
-
-    public void setAtaque(int ataque) {
-        this.ataque = ataque;
-    }
-
     public boolean isVivoOMuerto() {
         return vivoOMuerto;
     }
@@ -66,25 +59,7 @@ public class Criatura {
         this.vivoOMuerto = vivoOMuerto;
     }
 
-    public String[] getNombres() {
-        return nombres;
-    }
-
-    /**
-     * Getters y setters
-     */
-    public void setNombres(String[] nombres) {  
-        this.nombres = nombres;
-    }
-
-    public String elegirNombre() {
-        int posicion = (int) (Math.random() * (17 - 0 + 1) + 0);
-        nombre = nombres[posicion];
-        return nombre;
-    }
-
-    public int asignarArmadura() {
-        int armadura = (int) (Math.random() * (70 - 60 + 1) + 60);
-        return armadura;
+    public int getAtaque(){
+        return 0;
     }
 }

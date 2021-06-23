@@ -6,7 +6,8 @@ public class Bestia extends Criatura {
         super(vida, nombre, armadura, vivoOmuerto);
     }
 
-    public int asignarAtaque() {
+    @Override
+    public int getAtaque() {
         int dado1 = (int) (Math.random() * (90 - 0 + 1) + 0);
         return dado1;
     }
