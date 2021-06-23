@@ -8,7 +8,7 @@ public class Bestia extends Criatura {
 
     @Override
     public int getAtaque() {
-        int dado1 = (int) (Math.random() * (90 - 0 + 1) + 0);
+        int dado1 = (int) (Math.random() * (100 - 0 + 1) + 0);
         return dado1;
     }
 }
