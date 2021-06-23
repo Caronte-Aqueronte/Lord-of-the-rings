@@ -30,6 +30,9 @@ public class Principal {
         esperar(1);
         while (bandera.equals("")) {
             bandera = hayGanador();
+            if(bandera !=""){
+                break;
+            }
             if (contador == 0) {
                 System.out.println("TURNO: " + turno);
             }
